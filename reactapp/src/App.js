@@ -51,23 +51,23 @@ function Calculator() {
       <h2>Calculator</h2>
       <input
         type="number"
-        placeholder="Enter number 1"
+        placeholder="Number 1"
         value={num1}
         onChange={(e) => setNum1(e.target.value)}
         data-testid="num1"
       />
       <input
         type="number"
-        placeholder="Enter number 2"
+        placeholder="Number 2"
         value={num2}
         onChange={(e) => setNum2(e.target.value)}
         data-testid="num2"
       />
       <br />
-      <button onClick={handleAdd}>Add</button>
-      <button onClick={handleSubtract}>Subtract</button>
-      <button onClick={handleMultiply}>Multiply</button>
-      <button onClick={handleDivide}>Divide</button>
+      <button onClick={handleAdd}>+</button>
+      <button onClick={handleSubtract}>-</button>
+      <button onClick={handleMultiply}>*</button>
+      <button onClick={handleDivide}>/</button>
       <br />
       {error && <div data-testid="result">{error}</div>}
       {!error && result && <div data-testid="result">{result}</div>}
